@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS spk_motor;
+USE spk_motor;
+
+CREATE TABLE IF NOT EXISTS motor (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nama_motor VARCHAR(100),
+  harga INT,
+  penggunaan VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS kriteria (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nama_kriteria VARCHAR(100),
+  bobot FLOAT
+);
